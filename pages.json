@@ -1,0 +1,97 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				// 配置编译到 App 平台时的特定样式
+				"app-plus": {
+					// 隐藏滚动条
+					"scrollIndicator": "none",
+					"bounce":"none",
+					// 导航栏配置
+					"titleNView": {
+						"searchInput": {
+							// 自动获取焦点 
+							"autoFocus": false,
+							// 非输入情况下文本居中
+							"align": "center",
+							"backgroundColor": "#F7F7F7",
+							"borderRadius": "4px",
+							"placeholder": "搜索糗事",
+							"disabled": true,
+							"placeholderColor": "#CCCCCC"
+						},
+						"buttons": [
+							// 左边图标
+							{
+								"color": "#FF9619",
+								"colorPressed": "#BBBBBB",
+								"float": "left",
+								"fontSize": "44upx",
+								"fontSrc": "/static/fonts/icon.ttf",
+								"text": "\ue609"
+							},
+							// 右边图标
+							{
+								"color": "#000000",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "44upx",
+								"fontSrc": "/static/fonts/icon.ttf",
+								"text": "\ue653"
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/news/news",
+			"style": {}
+		}, {
+			"path": "pages/home/home",
+			"style": {}
+		}, {
+			"path": "pages/paper/paper",
+			"style": {}
+		}
+
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "糗事百科",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#ADADAD",
+		"selectedColor": "#FEE42A",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/首页%20(1).png",
+				"selectedIconPath": "static/tabbar/首页.png",
+				"text": "糗事"
+			},
+			{
+				"pagePath": "pages/news/news",
+				"iconPath": "static/tabbar/资讯.png",
+				"selectedIconPath": "static/tabbar/资讯%20(1).png",
+				"text": "动态"
+			},
+			{
+				"pagePath": "pages/paper/paper",
+				"iconPath": "static/tabbar/聊天.png",
+				"selectedIconPath": "static/tabbar/聊天%20(1).png",
+				"text": "小纸条"
+			},
+			{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/tabbar/我的.png",
+				"selectedIconPath": "static/tabbar/我的%20(1).png",
+				"text": "我的"
+			}
+		]
+	}
+}
